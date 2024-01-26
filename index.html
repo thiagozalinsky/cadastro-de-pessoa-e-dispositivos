@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <form action="#" method="post">
+        <!-- Informações Pessoais -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required>
+
+        <label for="usaWhatsapp">Utiliza WhatsApp neste número?</label>
+        <select id="usaWhatsapp" name="usaWhatsapp" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="cpfFoto">CPF (foto):</label>
+        <input type="file" id="cpfFoto" name="cpfFoto" accept="image/*" required>
+
+        <!-- ... (restante do formulário pessoal) ... -->
+
+        <!-- Informações do Familiar -->
+        <h3>Informações do Familiar:</h3>
+
+        <label for="nomeFamiliar">Nome:</label>
+        <input type="text" id="nomeFamiliar" name="nomeFamiliar" required>
+
+        <label for="sobrenomeFamiliar">Sobrenome:</label>
+        <input type="text" id="sobrenomeFamiliar" name="sobrenomeFamiliar" required>
+
+        <label for="grauParentesco">Grau de Parentesco:</label>
+        <input type="text" id="grauParentesco" name="grauParentesco" required>
+
+        <!-- ... (restante do formulário do familiar) ... -->
+
+        <!-- Declaração -->
+        <h3>Declaração</h3>
+
+        <!--<textarea id="declaracao" name="declaracao" required></textarea>-->
+
+        <label for="concordoDeclaracao">
+            <input type="checkbox" id="concordoDeclaracao" name="concordoDeclaracao" required>
+            Declaro para devidos fins que autorizo a posada JK Universitário entrar em contato com meu familiar em caso grave de saúde, declaro que os dados respondidos por mim neste formulário são verdadeiros e meu familiar tem pleno conhecimento do mesmo.
+        </label>
+
+        <!-- ... (restante do formulário pessoal) ... -->
+
+        <!-- Cadastro de Dispositivos -->
+        <h2>Formulário de Cadastro de Dispositivos</h2>
+
+        <form action="#" method="post">
+            <!-- Informações do usuário -->
+            <label for="nomeUsuario">Nome do Usuário:</label>
+            <input type="text" id="nomeUsuario" name="nomeUsuario" required>
+
+            <label for="rede">Pertence a qual Rede?</label>
+            <input type="text" id="rede" name="rede" required>
+
+            <label for="quantidadeDispositivos">Possui quantos dispositivos?</label>
+            <input type="number" id="quantidadeDispositivos" name="quantidadeDispositivos" required>
+
+            <!-- Dispositivos -->
+            <h3>Dispositivos:</h3>
+
+            <label for="macPc">MacAddress PC:</label>
+            <input type="text" id="macPc" name="macPc" required>
+
+            <label for="macNotebook">MacAddress Notebook:</label>
+            <input type="text" id="macNotebook" name="macNotebook" required>
+
+            <label for="macCelular">MacAddress Celular:</label>
+            <input type="text" id="macCelular" name="macCelular" required>
+
+            <label for="macTablet">MacAddress Tablet:</label>
+            <input type="text" id="macTablet" name="macTablet" required>
+
+            <label for="macKindle">MacAddress Kindle:</label>
+            <input type="text" id="macKindle" name="macKindle" required>
+
+            <label for="macImpressora">MacAddress Impressora:</label>
+            <input type="text" id="macImpressora" name="macImpressora" required>
+
+            <label for="macSmartTV">MacAddress Smart TV:</label>
+            <input type="text" id="macSmartTV" name="macSmartTV" required>
+
+            <label for="macRepetidor">MacAddress Repetidor:</label>
+            <input type="text" id="macRepetidor" name="macRepetidor" required>
+
+            <!-- Botão de envio -->
+            <button type="submit">Cadastrar</button>
+        </form>
+
+    </form>
+
+</body>
+</html>
