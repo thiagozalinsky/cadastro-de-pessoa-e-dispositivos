@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #1c1c1c;  /* Cor de fundo alterada para cinza escuro */
+    color: #fff;  /* Texto alterado para branco para melhor contraste */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;  /* Cor azul para o cabeçalho */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;  /* Cor do texto do label */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;  /* Removendo a borda para um visual mais limpo */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;  /* Cor de fundo mais escura para contraste */
+    color: #fff;  /* Texto alterado para branco */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    select,
+    button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+}
