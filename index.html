@@ -71,7 +71,10 @@
         <input type="text" id="num" name="num" required>
 
         <label for="complemento">Complemento:</label>
-        <input type="text" id="complemento" name="complemento" required>
+        <select id="complemento" name="complemento" required>
+            <option value="selecione">Selecione uma opçao</option>
+            <option value="casa">Casa</option>
+            <option value="apto">Apartamento</option>
 
         <label for="compResidencia">Comprovante de residencia:</label>
         <input type="text" id="compResidencia" name="compResidencia" required>
@@ -116,7 +119,7 @@
 
                 <label for="concordoDeclaracao">
                     <input type="checkbox" id="concordoDeclaracao" name="concordoDeclaracao" required>
-                    Regra para utilizaçao das redes eh de ate 3 dispositivos por inquilino nao eh aceito conexoes de visitantes.
+                    Regra para utilizaçao das redes eh de ate 3 dispositivos por inquilino nao eh aceito conexoes                     de visitantes.
                 </label>
 
             <label for="quantidadeDispositivos">Possui quantos dispositivos?</label>
