@@ -1,5 +1,8 @@
 <script>
-    function enviarDados() {
+    function enviarDados(event) {
+        // Evitar o comportamento padrão de envio do formulário
+        event.preventDefault();
+
         // Obter os dados do formulário
         var formData = new FormData(document.getElementById('cadastroForm'));
 
@@ -27,4 +30,7 @@
             alert('Erro ao enviar dados. Por favor, tente novamente.');
         });
     }
+
+    // Adicionar um ouvinte de evento de submissão ao formulário
+    document.getElementById('cadastroForm').addEventListener('submit', enviarDados);
 </script>
