@@ -1,18 +1,10 @@
 <script>
-    function enviarDados(event) {
-        // Evitar o comportamento padrão de envio do formulário
+    document.getElementById('cadastroForm').addEventListener('submit', function (event) {
         event.preventDefault();
 
-        // Obter os dados do formulário
-        var formData = new FormData(document.getElementById('cadastroForm'));
+        const formData = new FormData(event.target);
+        const formDataObject = Object.fromEntries(formData);
 
-        // Criar um objeto com os dados do FormData
-        var formDataObject = {};
-        formData.forEach(function(value, key){
-            formDataObject[key] = value;
-        });
-
-        // Enviar os dados para a API do SheetDB usando Fetch
         fetch('https://sheetdb.io/api/v1/02ipcqrt0jjl7', {
             method: 'POST',
             headers: {
@@ -29,8 +21,5 @@
             console.error('Erro ao enviar dados:', error);
             alert('Erro ao enviar dados. Por favor, tente novamente.');
         });
-    }
-
-    // Adicionar um ouvinte de evento de submissão ao formulário
-    document.getElementById('cadastroForm').addEventListener('submit', enviarDados);
+    });
 </script>
