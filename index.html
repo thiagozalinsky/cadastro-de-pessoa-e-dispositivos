@@ -24,6 +24,7 @@
 
         <label for="usaWhatsapp">Utiliza WhatsApp neste número?</label>
         <select id="usaWhatsapp" name="usaWhatsapp" required>
+            <option value="sim">Selecione uma opçao</option>
             <option value="sim">Sim</option>
             <option value="nao">Não</option>
         </select>
@@ -36,6 +37,18 @@
 
         <label for="cpfFoto">CPF (foto):</label>
         <input type="file" id="cpfFoto" name="cpfFoto" accept="image/*" required>
+        
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" required>
+
+        <label for="rgFoto">RG (foto):</label>
+        <input type="file" id="rgFoto" name="rgFoto" accept="image/*" required>
+
+        <label for="passaporte">Passaporte:</label>
+        <input type="text" id="passaporte" name="passporte" required>
+
+        <label for="passapote">Passaporte (foto):</label>
+        <input type="file" id="passporte" name="passaporte" accept="image/*" >
 
         <!-- ... (restante do formulário pessoal) ... -->
 
@@ -51,6 +64,32 @@
         <label for="grauParentesco">Grau de Parentesco:</label>
         <input type="text" id="grauParentesco" name="grauParentesco" required>
 
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="num">N°:</label>
+        <input type="text" id="num" name="num" required>
+
+        <label for="complemento">Complemento:</label>
+        <input type="text" id="complemento" name="complemento" required>
+
+        <label for="compResidencia">Comprovante de residencia:</label>
+        <input type="text" id="compResidencia" name="compResidencia" required>
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required>
+
+        <label for="usaWhatsapp">Utiliza WhatsApp neste número?</label>
+        <select id="usaWhatsapp" name="usaWhatsapp" required>
+            <option value="sim">Selecione uma opçao</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        
+            
         <!-- ... (restante do formulário do familiar) ... -->
 
         <!-- Declaração -->
@@ -68,11 +107,17 @@
 
         <form action="#" method="post">
             <!-- Informações do usuário -->
-            <label for="nomeUsuario">Nome do Usuário:</label>
-            <input type="text" id="nomeUsuario" name="nomeUsuario" required>
+            <label for="rede">Selecione a rede que voce vai conectar</label>
+            <select id="red" name="red" required>
+                <option value="predio-amarelo">A definir</option>
+                <option value="predio-rosa">A definir</option>
+                <option value="jk4">A definir</option>
 
-            <label for="rede">Pertence a qual Rede?</label>
-            <input type="text" id="rede" name="rede" required>
+
+                <label for="concordoDeclaracao">
+                    <input type="checkbox" id="concordoDeclaracao" name="concordoDeclaracao" required>
+                    Regra para utilizaçao das redes eh de ate 3 dispositivos por inquilino nao eh aceito conexoes                     de visitantes.
+                </label>
 
             <label for="quantidadeDispositivos">Possui quantos dispositivos?</label>
             <input type="number" id="quantidadeDispositivos" name="quantidadeDispositivos" required>
@@ -81,28 +126,28 @@
             <h3>Dispositivos:</h3>
 
             <label for="macPc">MacAddress PC:</label>
-            <input type="text" id="macPc" name="macPc" required>
+            <input type="text" id="macPc" name="macPc" >
 
             <label for="macNotebook">MacAddress Notebook:</label>
-            <input type="text" id="macNotebook" name="macNotebook" required>
+            <input type="text" id="macNotebook" name="macNotebook" >
 
             <label for="macCelular">MacAddress Celular:</label>
-            <input type="text" id="macCelular" name="macCelular" required>
+            <input type="text" id="macCelular" name="macCelular" >
 
             <label for="macTablet">MacAddress Tablet:</label>
-            <input type="text" id="macTablet" name="macTablet" required>
+            <input type="text" id="macTablet" name="macTablet" >
 
             <label for="macKindle">MacAddress Kindle:</label>
-            <input type="text" id="macKindle" name="macKindle" required>
+            <input type="text" id="macKindle" name="macKindle" >
 
             <label for="macImpressora">MacAddress Impressora:</label>
-            <input type="text" id="macImpressora" name="macImpressora" required>
+            <input type="text" id="macImpressora" name="macImpressora" >
 
             <label for="macSmartTV">MacAddress Smart TV:</label>
-            <input type="text" id="macSmartTV" name="macSmartTV" required>
+            <input type="text" id="macSmartTV" name="macSmartTV" >
 
             <label for="macRepetidor">MacAddress Repetidor:</label>
-            <input type="text" id="macRepetidor" name="macRepetidor" required>
+            <input type="text" id="macRepetidor" name="macRepetidor" >
 
             <!-- Botão de envio -->
             <button type="submit">Cadastrar</button>
